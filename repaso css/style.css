@@ -1,0 +1,87 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.primeralista{
+    list-style-type: none; /*poniendo esta propiedad y valor, eliminamos los bullets y los numeros*/
+}
+
+/*estilos de texto, normal e italica*/
+.tituloh1{
+    font-style: normal;
+    background-color: blue; /*color de fondo*/
+    font-family: mifuente; /*tipografia local*/
+}
+.primeralista{
+    font-style: italic;
+}
+
+/*font-weight*/
+.primerp{
+    font-weight: bold;
+    font-family: 'Caveat', cursive; /* tipografia web. primero buscamos en google fonts, elegimos la que nos guste y
+    linkeamos el codigo en el hatml, luego elegimos a que le queremos poner el font. usamos font-family y ponemos el 
+    nombre que nos indica la fuente elegida.*/
+}
+.segundop{
+    font-weight: normal;
+    line-height: 3;  /* separa de los textos de arriba y de abajo*/
+}
+
+/*font-family*/
+.tercerp{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center; /*text-aling*/
+    text-decoration: line-through /*text-decoration. si ponemos none en un enlace, le sacamos el subrrayado.*/
+}
+.cuartop{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    text-align: right; /*text-aling*/
+    background-image: url(https://img.freepik.com/vector-gratis/plantilla-fondo-estrellas-brillantes-cielo-oscuro_1308-40081.jpg?w=900&t=st=1669924890~exp=1669925490~hmac=4d70659f7df3a3cd90f7f4aedb1c8af9bd5bf4238a0508c153e1a3d7bb97466d);
+    /*imagen de fondo: asi se pone una imagen desde una direccion de url*/
+    /*background-repeat, es por si queremos que la imagen de fondo se repita (repeat) o no (no-repeat).
+    (repear-x) la imagen se repite hacia el costado y (repeat-y) se repite hacia abajo.
+    (background-position) es para posicionar el fondo.
+    (background-size) es para el tamaño que le querramos dar al fondo. */
+}
+
+/*tipografia local, bajamos la tipografia que queremos, la comprimimos y la pasamos a la carpeta del proyecto. 
+luego seguimos los pasos que estan a continuacion. le podemos poner el nombre que queramos, como en este ejemplo (mifuente)*/
+@font-face{
+    font-family: "mifuente";
+    src: url(./fuentes/australia/AustraliaCustom.ttf);
+}
+
+/*metodologia bem*/
+.nav{
+    background: slateblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__logo{
+    height: 100%;
+    background: white;
+}
+.nav__img{
+    height: 100%;
+}
+
+.nav__link{
+    color: white;
+    text-decoration: none;
+}
+.nav__link--color{
+    color: black;
+}
+
+/*BOX MODEL*/
+/*padding, es la propiedad que controla la distancia que tiene por ejemplo un 
+borde de la caja y el contendido que esta dentro. */
+/*margin, controla la separacion de una caja con las que la rodean.*/
+/*width, es el ancho, por ejemplo de una caja.*/
+/*height, es el alto, por ejemplo de una caja.*/
